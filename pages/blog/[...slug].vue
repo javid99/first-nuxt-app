@@ -36,8 +36,8 @@ useSeoMeta({
 
 const activeID = ref(null);
 onMounted(() => {
-   const callback = (enteries: any) => {
-      for (const entry of enteries) {
+   const callback = (entries: any) => {
+      for (const entry of entries) {
          if (entry.isIntersecting) {
             activeID.value = entry.target.id;
             break;
